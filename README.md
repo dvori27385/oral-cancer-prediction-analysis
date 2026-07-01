@@ -40,7 +40,6 @@ Used to identify behavioral patterns linked to health outcomes.
 Attempted to group patients without target labels. The algorithm formed two clusters primarily based on dietary habits, but failed to separate patients based on their cancer diagnosis.
 ![K-Means Clusters](mmn22/m22-kmeans-cluster-visualization.png)
 ![K-Means Centroids](mmn22/m22-kmeans-cluster-centroids.jpg)
-
 ### 3. Neural Networks (MLP)
 Implemented a Multi-Layer Perceptron (3 layers, 10 hidden neurons) to capture complex non-linear relationships.
 - **Results**: Accuracy remained around 49.8%, and the error convergence was slow, confirming the inherent noise and limitations in the dataset.
