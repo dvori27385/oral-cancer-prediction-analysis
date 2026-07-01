@@ -43,7 +43,7 @@ Attempted to group patients without target labels. The algorithm formed two clus
 ### 3. Neural Networks (MLP)
 Implemented a Multi-Layer Perceptron (3 layers, 10 hidden neurons) to capture complex non-linear relationships.
 - **Results**: Accuracy remained around 49.8%, and the error convergence was slow, confirming the inherent noise and limitations in the dataset.
-![Neural Network Architecture](mmn22/m22-neural-network-architecture.jpg)
+![Neural Network Architecture](mmn22/m22-neural-network-architecture.jpg.png)
 ![Error Convergence](mmn22/m22-neural-network-convergence.png)
 
 📄 **[View Full Part 2 Report (Maman 22)](MMN22.pdf)** ---
