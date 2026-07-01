@@ -1,31 +1,32 @@
 # Oral Cancer Prediction & Analysis
 
-This project focuses on predicting oral cancer development based on clinical and personal risk factors. It utilizes data mining techniques to identify significant attributes and build classification models to aid in early diagnosis.
+This project focuses on predicting oral cancer development based on clinical and personal risk factors. It utilizes data mining techniques to identify significant attributes and build classification models.
 
 ## 📊 Project Methodology (KDD Process)
 
-The project followed the standard Knowledge Discovery in Databases (KDD) stages:
-- **Data Collection & Cleaning**: Handled duplicate records to ensure data integrity and statistical accuracy.
-- **Data Transformation**: Performed discretization on the 'Age' attribute to improve model performance and reduce noise.
-- **Attribute Selection**: Applied Information Gain analysis to identify the most predictive features, such as 'Country' and 'Age'.
+The project followed the standard KDD stages:
+- **Data Collection & Cleaning**: Handled duplicate records to ensure data integrity.
+![Data Cleaning](images/data-cleaning-duplicates.png.png)
 
+- **Data Transformation**: Performed discretization on the 'Age' attribute to improve model performance.
+![Age Discretization](images/age-discretization.png)
+
+- **Attribute Selection**: Applied Information Gain analysis to identify the most predictive features.
 ![Data Distribution](images/data-distribution-weka.png)
+![Attribute Selection](images/attribute-selection-weka.png)
 
 ## 🤖 Models & Classification
 
-I experimented with two primary classification algorithms using the WEKA platform:
-
 ### 1. ID3 Algorithm
-A classic decision tree approach that uses Information Gain for node splitting.
-![ID3 Decision Tree](images/id3-decision-tree-model.png)
+![ID3 Model](images/id3-decision-tree-model.png)
+![ID3 Performance](images/id3-performance-metrics.png)
 
 ### 2. J48 Algorithm (C4.5)
-An improved version of ID3, utilizing Gain Ratio and post-pruning to prevent overfitting and improve model robustness.
-![J48 Performance Metrics](images/j48-performance-metrics.png)
-![J48 Decision Tree](images/j48-decision-tree-visualization.png)
+![J48 Performance](images/j48-performance-metrics.png)
+![J48 Tree](images/j48-decision-tree-visualization.png)
 
 ## 📈 Conclusion & Analysis
-Both models achieved an accuracy of approximately 50%, suggesting that the selected clinical features in this specific dataset have a weak correlation with the diagnosis. This project highlights the importance of data quality and the challenges of feature selection in medical diagnosis tasks.
+The models highlight that 'Country' and 'Age' are significant predictors, although clinical features showed a moderate correlation in this specific dataset. 
 
 ## 📄 Full Report
-For the complete technical documentation, including pseudo-code and detailed analysis, you can refer to the [project PDF](reports/YOUR_PDF_NAME.pdf).
+For the complete technical documentation, you can refer to the [project PDF](MMN21...pdf).
