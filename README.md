@@ -8,7 +8,7 @@ This repository contains a comprehensive data mining project analyzing oral canc
 
 ### 📊 Project Methodology (KDD Process)
 - **Data Collection & Cleaning**: Handled duplicate records to ensure data integrity.
-![Data Cleaning](images/data-cleaning-duplicates.png.png)
+![Data Cleaning](images/data-cleaning-duplicates.png)
 
 - **Data Transformation**: Performed discretization on the 'Age' attribute to improve model performance.
 ![Age Discretization](images/age-discretization.png)
@@ -26,32 +26,28 @@ This repository contains a comprehensive data mining project analyzing oral canc
 ![J48 Performance](images/j48-performance-metrics.png)
 ![J48 Tree](images/j48-decision-tree-visualization.png)
 
-📄 **[View Full Part 1 Report (Maman 21)](MMN21...pdf)** 
-
----
+📄 **[View Full Part 1 Report (Maman 21)](MMN21.pdf)** ---
 
 ## 🔵 Part 2: Advanced Analysis & Unsupervised Learning (Maman 22)
 
 ### 1. Association Rules (Apriori)
 Used to identify behavioral patterns linked to health outcomes. 
 - **Key Insight**: Identified strong associations between risk behaviors (smoking, alcohol) and the target variable.
-![Apriori Large Itemsets](mmn22/m22-apriori-large-itemsets.jpg.png)
-![Apriori Rules](mmn22/m22-apriori-best-rules.png)
+![Apriori Large Itemsets](images/m22-apriori-large-itemsets.jpg)
+![Apriori Rules](images/m22-apriori-best-rules.png)
 
 ### 2. Clustering (K-Means)
 Attempted to group patients without target labels. The algorithm formed two clusters primarily based on dietary habits, but failed to separate patients based on their cancer diagnosis.
-![K-Means Clusters](mmn22/m22-kmeans-cluster-visualization.png)
-![K-Means Centroids](mmn22/m22-kmeans-cluster-centroids.jpg.png)
+![K-Means Clusters](images/m22-kmeans-cluster-visualization.png)
+![K-Means Centroids](images/m22-kmeans-cluster-centroids.jpg)
 
 ### 3. Neural Networks (MLP)
 Implemented a Multi-Layer Perceptron (3 layers, 10 hidden neurons) to capture complex non-linear relationships.
 - **Results**: Accuracy remained around 49.8%, and the error convergence was slow, confirming the inherent noise and limitations in the dataset.
-![Neural Network Architecture](mmn22/m22-nural-network-architecture.jpg.png)
-![Error Convergence](mmn22/m22-neural-network-convergence.png)
+![Neural Network Architecture](images/m22-neural-network-architecture.jpg)
+![Error Convergence](images/m22-neural-network-convergence.png)
 
-📄 **[View Full Part 2 Report (Maman 22)](MMN22.pdf)** 
-
----
+📄 **[View Full Part 2 Report (Maman 22)](MMN22.pdf)** ---
 
 ## 🏁 Final Conclusion
 Across all models—supervised and unsupervised—the algorithms performed correctly, but the accuracy consistently hovered around 50%. This project demonstrates a crucial data science principle: **data quality dictates model quality**. Predicting clinical diagnoses requires robust medical data (e.g., lab tests, genetics) rather than just lifestyle surveys.
